@@ -1,0 +1,335 @@
+* {
+    font-family: 'PT Serif', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+:root {
+    --main-pink: rgb(237, 33, 159);
+    --second-color: rgb(119, 11, 60);
+    --third-color: rgb(255, 0, 43);
+    --main-gray: rgb(153, 153, 153);
+    --second-gray: #191919;
+    --third-gray: #333;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://media.istockphoto.com/photos/product-showcase-with-spotlight-black-studio-room-background-use-as-picture-id1304681590?k=20&m=1304681590&s=612x612&w=0&h=joZDfoZKh78MAZBxxcw8rPr72oZexp8RPlovRWXMAlo=');
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 5%;
+    text-align: center;
+}
+
+.logo {
+    padding-left: 20px;
+    letter-spacing: 1px;
+}
+span {
+    color: var(--main-pink);
+}
+
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+nav ul li a:hover {
+    color: var(--main-pink);
+    transition: .4s;
+}
+
+
+.btn {
+    text-decoration: none;
+    border: 1px solid transparent;
+    background-color: var(--second-color);
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: all .5s ease-out;
+}
+.btn:hover, .btn:focus {
+    background-color: #fff;
+    color: var(--third-gray);
+}
+.btn:hover {
+    transform: scale(1.1);
+}
+.btn:active {
+    color: var(--third-color);
+    transition: .3s;
+}
+
+.content {
+   position: absolute;
+   top: 50%;
+   left: 8%;
+   transform: translateY(-30%);
+}
+
+h1 {
+    font-size: 55px;
+    margin: 20px 0px 20px;
+    color: var(--main-gray);
+}
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 25px;
+}
+.subtext {
+    display: inline-block;
+}
+
+#hireme {
+    padding: 15px 30px;
+    font-size: 1.2em;
+    background-color: var(--second-color);
+    font-weight: 800;
+    color: white;
+    border: 2px solid transparent;
+    border: unset;
+    transition: .5s;
+}
+#hireme:hover {
+    background-color: transparent;
+    border: 2px solid var(--second-color);
+}
+
+.About {
+    background-color: var(--second-gray);
+    width: 100%;
+    padding: 100px 0;
+}
+
+.About img {
+    height: 500px;
+    width: 500px;
+}
+
+.About text {
+    width: 550px;
+}
+
+.main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about-text h2 {
+   font-size: 35px;
+   text-transform: uppercase;
+   margin-bottom: 25px;
+}
+
+.about-text h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid var(--second-color);
+}
+
+.about-text p {
+    font-size: 20px;
+}
+
+.about-text {
+    padding-left: 30px;
+}
+
+.Services {
+    width: 100%;
+    height: 700px;
+    background-image: url('https://media.istockphoto.com/photos/cooperation-behind-laptop-picture-id486735358?k=20&m=486735358&s=612x612&w=0&h=rGFMpkwJTGNfRLSn9euAG0fUye-JhzmcvITje_K18KY=');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0px;
+}
+
+.title h2 {
+    text-align: center;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin: 30px auto;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+}
+
+.card {
+    height: 380px;
+    width: 400px;
+    padding: 20px 35px;
+    background-color: var(--second-gray);
+    border-radius: 15px;
+    margin: 15px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.card i {
+    font-size: 2em;
+    color: var(--main-pink);
+    margin: 25px 0;
+    display: block;
+    text-align: center;
+}
+
+.card h5 {
+    font-size: 1.3em;
+    margin-bottom: 15px;
+}
+
+.pra p {
+    color: var(--main-gray);
+    font-size: 15px;
+    margin-bottom: 20px;
+} 
+
+.card .button {
+    background-color: var(--main-pink);
+    text-decoration: none;
+    border: 2px solid transparent;
+    border: unset;
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 40px;
+    border-radius: 15px;
+    transition: .5s;
+}
+.card .button:hover {
+    background-color: transparent;
+    border: 2px solid var(--main-pink);
+}
+
+.Contact {
+    background-color: #000;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.contact-text {
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 35px;
+    color: var(--main-pink);
+    padding-bottom: 20px;
+}
+
+.contact-text p {
+    font-size: 1.3em;
+}
+
+.news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+form #email, #text-message {
+   width: 300px;
+   background-color: var(--second-gray);
+   padding: 15px 100px 15px 15px;
+   border: 1px solid var(--second-color);
+   margin: 20px auto;
+   width: 50%;
+}
+::placeholder {
+    color: var(--main-pink);
+}
+
+
+#confirm {
+    padding: 10px 30px;
+    font-size: 1.2em;
+    background-color: var(--second-color);
+    font-weight: 800;
+    color: white;
+    border: 2px solid transparent;
+    border: unset;
+}
+#confirm:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: var(--second-gray);
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer p:nth-child(1) {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+footer p:nth-child(3) {
+    color: var(--main-gray);
+    font-size: 1.1em;
+    position: absolute;
+    bottom: 35px;
+}
+
+.social {
+    display: flex;
+}
+
+.social a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 20px 10px;
+    background-color: var(--second-color);
+    border-radius: 10px;
+    transition: .3s;
+}
+.social a:hover {
+    transform: scale(1.2);
+}
